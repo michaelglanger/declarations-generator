@@ -1,0 +1,94 @@
+{
+	"version": "1.0",
+	"direction": "IN",
+	"externalReference": "INEU_H1EIDR_0203_002", // incremental with range
+	"messageType": "New",
+	"storageLocationReference": "BMBE001",
+	"singleAdministrativeDocument": {
+		"accDateCode": "2019-01-01T00:00:00+01:00", // from that date until now 
+		"addDeclType1": "A",		
+		"additionalInformations": [{
+			"code": "44-PLDA-DV1Exempt",
+			"text": "96.163",
+			"type": "string"
+		}],
+		"agentStatus": "1",
+		"declarationOfficeCode": "BEHSS216000",
+		"declType": "IM",
+		"docRefNum": "19BEI0000058563001", // use beginning as the year + BEI00000 + incremental max 18 characters
+		"invoiceCurrency": "EUR",
+		"declarant": {
+			"code": "BE0869621133"
+		},
+		"goodsShipment": {
+			"trxNatCode": 11,
+			"consignment": {
+				"borderTransportMeans": {
+					"country": "US",
+					"identification": "VESSEL",
+					"mode": "1"
+				},
+				"arrivalTransportMeans": {
+					"identification": "1ABC123",
+					"mode": "3"
+				}
+			},
+			"customsValuation": {
+				"valuationMethod": "1"
+			},
+			"exporter": {
+				"code": "EXPORTER01" // set of exporters from a list / random
+			},
+			"tradeTerms": {
+				"place": "Antwerpen",
+				"termsCode": "DAP"
+			},
+			"ucr": {
+				"traderReference": "INEU_H1EIDR_0203_002" // same as before
+			},
+			"governmentAgencyGoodsItems": [{
+				"containerIdentification": "TRIU8210808", // TRIU + random (7)
+				"additionalDocuments": [{
+					"category": "N",
+					"refNum": "INVOICE02", // INVOICE + incremental
+					"type": "935"
+				}],
+				"commodity": { // provided approx 10 items
+					"description": "ITEM STANDARD",
+					"itemId": "ITEM001",
+					"classifications": [{
+						"code": "9018908400",
+						"type": "TARIC" // always the same
+					}],
+					"invoiceLine": {
+						"itemAmount": 1000 // random with range 
+					}
+				},
+				"goodsMeasure": { // random with range
+					"gmass": 100, // higher than the rest.
+					"nmass": 95,
+					"qty": 10 // random with range
+				},
+				"governmentProcedure": {
+					"proc": "40",
+					"prevProc": "00",
+					"declProcType": "H",
+					"procNat2": "4A0"
+				},
+				"previousDocuments": [{
+					"category": "Z",
+					"refNum": "INVOICE02", // same as before
+					"type": "380"
+				}],
+				"packagings": [{
+					"quantity": 10, // equal as qty in goodsMeasure
+					"shippingMarks": "INEU_H1EIDR_0203_002", // same as external reference
+					"type": "CT"
+				}]
+			}]
+		},
+		"importer": {
+			"code": "BE0869621133" // always the same
+		}
+	}
+}

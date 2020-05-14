@@ -1,0 +1,42 @@
+{
+	"version": "1.0",
+	"customsFlow": "INEU_H1EIDR",
+	"direction": "IN",
+	"externalReference": "INEU_H1EIDR_BM003",
+	"messageType": "New",
+	"storageLocationReference": "BMBE001", 
+	"singleAdministrativeDocument": {
+		"accDateCode": "2019-01-01T00:00:00+01:00",
+		"addDeclType1": "A",
+		"declType": "EX",
+		"invoiceCurrency": "EUR",
+		"goodsShipment": {
+			"ucr": {
+				"traderReference": "INEU_H1EIDR_MF_OK001"
+			},
+			"governmentAgencyGoodsItems": [{
+				"commodity": {
+					"description": "INEU_H1EIDR_MF_OK001",
+					"itemId": "ITEM001", 
+					"classifications": [{
+						"code": "0106200000",
+						"type": "TARIC"
+					}],
+					"invoiceLine": {
+						"itemAmount": 2000 
+					}
+				},
+				"goodsMeasure": {
+					 "qty": 1 
+				},
+				"governmentProcedure": {
+					"proc": "40",
+					"prevProc": "00" 
+				},
+				"ucr": {
+					"traderReference": "INEU_H1EIDR_MF_OK001"
+				}
+			}]
+		} 
+	}
+}

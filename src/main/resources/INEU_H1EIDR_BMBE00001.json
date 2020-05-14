@@ -1,0 +1,111 @@
+{
+	"version": "1.0",
+	"direction": "IN",
+	"externalReference": "INEU_H1EIDR_BMBE00001",
+	"messageType": "New",
+	"storageLocationReference": "BMBE001",
+	"singleAdministrativeDocument": {
+		"accDateCode": "2020-02-24T13:03:45+01:00",
+		"addDeclType1": "A",		
+		"additionalInformations": [{
+			"code": "44-PLDA-DV1Exempt",
+			"text": "96.163",
+			"type": "string"
+		}],
+		"agentStatus": "1",
+		"declarationOfficeCode": "BE101000",
+		"declType": "IM",
+		"docRefNum": "20BEI0000059573311",
+		"invoiceCurrency": "EUR",
+		"calculationReturns": [{
+			"basisValue": 1000,
+			"type": "A00",
+			"payment": {
+				"assessed": 120,
+				"methodCode": "A"
+			}
+		},
+		{
+			"basisValue": 1120,
+			"type": "B00",
+			"payment": {
+				"assessed": 235.20,
+				"methodCode": "G"
+			}
+		}
+		],
+		"declarant": {
+			"code": "BE0869621133"
+		},
+		"goodsShipment": {
+			"exportCountry": "RU",
+			"trxNatCode": 11,
+			"consignment": {
+				"borderTransportMeans": {
+					"country": "RU",
+					"identification": "VESSEL",
+					"mode": "1"
+				},
+				"arrivalTransportMeans": {
+					"identification": "TRUCK",
+					"mode": "3"
+				}
+			},
+			"exporter": {
+				"code": "EXPORTER05"
+			},
+			"tradeTerms": {
+				"place": "Antwerpen",
+				"termsCode": "CIF"
+			},
+			"ucr": {
+				"traderReference": "INEU_H1EIDR_BMBE00001"
+			},
+			"governmentAgencyGoodsItems": [{
+				"additionalDocuments": [{
+					"category": "N",
+					"refNum": "INVOICE",
+					"type": "935"
+				}],
+				"commodity": {
+					"description": "Cotton T-shits",
+					"itemId": "ITEM003",
+					"classifications": [{
+						"code": "6109100010",
+						"type": "TARIC"
+					}],
+					"invoiceLine": {
+						"itemAmount": 1000
+					}
+				},
+				"customsValuation": {
+					"valuationMethod": "1"
+				},
+				"goodsMeasure": {
+					"gmass": 500,
+					"nmass": 450,
+					"qty": 100
+				},
+				"governmentProcedure": {
+					"proc": "40",
+					"prevProc": "00",
+					"declProcType": "H",
+					"procNat2": "4A0"
+				},
+				"previousDocuments": [{
+					"category": "Z",
+					"refNum": "INVOICE",
+					"type": "380"
+				}],
+				"packagings": [{
+					"quantity": 10,
+					"shippingMarks": "INEU_H1EIDR_BMBE00001",
+					"type": "CT"
+				}]
+			}]
+		},
+		"importer": {
+			"code": "BE0869621133"
+		}
+	}
+}
