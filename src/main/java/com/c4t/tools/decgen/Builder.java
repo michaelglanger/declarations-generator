@@ -222,6 +222,16 @@ public class Builder {
         return ItemsEnumSG.values();
     }
 
+    @Bean(name="FR")
+    public ItemsEnum[] getItemsFR() {
+        return ItemsEnumFR.values();
+    }
+
+    @Bean(name="NL")
+    public ItemsEnum[] getItemsNL() {
+        return ItemsEnumNL.values();
+    }
+
     private Date calculateDate(Date initDate, int shift) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(initDate);
